@@ -1,0 +1,166 @@
+@import 'variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+.App{
+  font-family: 'Manrope', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: $dark_blue;
+  height: 100vh;
+  margin: 0
+}
+
+.container{
+  background-color: $dark_grayish_blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  top: 111px;
+  align-items: center;
+  color: $light_cyan;
+  padding: 10px 10px 10px 10px;
+  width: 85%;
+  height: 45vh;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+}
+
+.title{
+  font-size: 11px;
+  margin: 25px 0 20px 0;
+  letter-spacing: 4px;
+  color: $neon_green;
+}
+
+.advice{
+  margin: auto;
+  font-size: 25px;
+}
+
+.pattern-divider{
+  margin: 30px 0 50px 0;
+  
+}
+
+
+.dice{ 
+    position: relative;
+    top: 90px;
+    padding: 19px;
+    background-color: $neon_green;
+    border-radius: 50%;
+    border: none;
+
+    &:hover{
+      box-shadow: $neon_green 0px 0px 40px 2px;
+      cursor: pointer;
+  
+    }
+
+
+}
+@media screen and (min-width: 660px){
+  .container{
+    background-color: $dark_grayish_blue;
+    display: flex;
+    flex-direction: column;
+    position: static;
+    padding: 30px 30px 35px 30px;
+    align-items: center;
+    color: $light_cyan;
+    width: 40%;
+    height: 40vh;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+
+  .dice{ 
+    position: relative;
+    top: -25px;
+    padding: 19px;
+    background-color: $neon_green;
+    border-radius: 50%;
+    border: none;
+
+    &:hover{
+      box-shadow: $neon_green 0px 0px 40px 2px;
+      cursor: pointer;
+  
+    }
+  }
+}
+
+@media screen and (min-width: 1100px){ 
+  
+  .App{
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark_blue;
+    height: 100vh;
+    margin: 0
+  }
+  
+  .container{
+    background-color: $dark_grayish_blue;
+    display: flex;
+    flex-direction: column;
+    position: static;
+    padding: 30px 30px 35px 30px;
+    align-items: center;
+    color: $light_cyan;
+    width: 33%;
+    height: 33vh;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  
+    .title{
+      font-size: 14px;
+      letter-spacing: 4px;
+      color: $neon_green;
+    }
+  
+    .advice{
+      margin: auto;
+      width: 100%;
+      font-size: 28px;
+    }
+  
+    .pattern-divider{
+      width: 90%;
+      margin-bottom: 25px;
+    }
+  }
+  
+    .dice{ 
+      position: relative;
+      top: -30px;
+      padding: 19px;
+      width: auto;
+      background-color: $neon_green;
+      border-radius: 50%;
+      border: none;
+      
+  
+      &:hover{
+        box-shadow: $neon_green 0px 0px 40px 2px;
+        cursor: pointer;
+    
+      }
+  
+    }
+    .dice img{
+      width: 25px;
+    }
+  
+  
+  
+}
